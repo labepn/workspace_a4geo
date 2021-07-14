@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+<mat-accordion>
+   <mat-expansion-panel>
+      <mat-expansion-panel-header>
+         <mat-panel-title>
+            <b>Geoportal</b>
+         </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p><button mat-button class="navigation-button" routerLink="geoportal" routerLinkActive="active-list-item">Geoportal</button></p>
+     </mat-expansion-panel>     
+</mat-accordion>
+<mat-accordion>
+   <mat-expansion-panel>
+      <mat-expansion-panel-header>
+         <mat-panel-title>
+            <b>Katastar nepokretnosti</b>
+         </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p><button mat-button class="navigation-button" routerLink="nosiocip" routerLinkActive="active-list-item">Nosioci prava</button></p>
+      <p><button mat-button class="navigation-button">Parcele</button></p>
+      <p><button mat-button class="navigation-button" >Objekti</button></p>
+     </mat-expansion-panel>   
+</mat-accordion>
+<mat-accordion>
+   <mat-expansion-panel>
+      <mat-expansion-panel-header>
+         <mat-panel-title>
+            <b>Šifarnici</b>
+         </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p><button mat-button class="navigation-button" routerLink="sifarnici/tipnosiocap" routerLinkActive="active-list-item">Tip nosioca prava</button></p> 
+       </mat-expansion-panel>      
+</mat-accordion>
+<mat-accordion>
+   <mat-expansion-panel>
+      <mat-expansion-panel-header>
+         <mat-panel-title>
+            <b>Geoportal MK</b>
+         </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p><button mat-button class="navigation-button" routerLink="geoportalmk" routerLinkActive="active-list-item">Geoportal MK</button></p>
+     </mat-expansion-panel>     
+</mat-accordion>

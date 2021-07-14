@@ -1,0 +1,35 @@
+spring.jpa.database = POSTGRESQL
+spring.datasource.platform = insert
+spring.jpa.show-sql = true
+#spring.datasource.driver-class-name = com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+spring.datasource.driver-class-name = org.postgresql.Driver
+
+# ENDPOINTS CORS CONFIGURATION (CorsEndpointProperties)
+management.endpoints.web.cors.allowed-headers=  '*' 
+management.endpoints.web.cors.allowed-methods=   '*' 
+management.endpoints.web.cors.allowed-origins=   '*' 
+management.endpoints.web.cors.max-age=1800s
+
+# disable driver's feature detection
+spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults = false
+logging.level.org.springframework.security=trace
+logging.level.org.springframework.web=trace
+
+# without detection you have to set the dialect by hand
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+
+# proxy problem sa bean-ovima
+spring.jackson.serialization.fail-on-empty-beans = false
+
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.SQLServerDialect
+spring.jpa.hibernate.dialect=org.hibernate.dialect.SQLServerDialect
+spring.jpa.hibernate.ddl-auto = none
+
+spring.datasource.url = jdbc:postgresql://147.91.175.146/vezbe?currentSchema=vezbe
+
+spring.datasource.username = postgres
+spring.datasource.password = prijatelj
+
+#port
+server.port = 8085

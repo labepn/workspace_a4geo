@@ -1,0 +1,35 @@
+import { Component, OnInit } from '@angular/core';
+
+//dialog
+import { MAT_DIALOG_DATA, MatDialog, MatDialogConfig, MatDialogRef }  from '@angular/material';
+import { Inject } from "@angular/core";
+
+@Component({
+  selector: 'app-info',
+  templateUrl: './info.component.html',
+  styleUrls: ['./info.component.css']
+})
+export class InfoComponent implements OnInit {
+    brojParc;
+    parcelData;
+    title;
+
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any, private dialogRef: MatDialogRef<InfoComponent>) { 
+      this.brojParc = data.brParc;
+      this.parcelData = data.parcelData;
+      this.title=data.title;
+      console.log(data.brojParc);
+      console.log('PODACI O PARCELI'+JSON.stringify(data.parcelData));
+      
+  }
+  
+
+  ngOnInit() {
+  }
+  
+  close() {
+      console.log('ZATVARA DIALOG');
+      this.dialogRef.close();
+  }
+
+}

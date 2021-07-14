@@ -1,0 +1,152 @@
+<meta charset="utf-8">
+
+<div class="box">
+ 
+ 
+  <h2 class="mat-h2">Zemljište</h2>
+     
+      
+</div>
+
+<div class="box">
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+ 
+  
+ 
+      
+        
+        <mat-form-field appearance="standard">
+            <mat-label>Srez</mat-label>
+            <input  matInput placeholder="unesi oznaku" formControlName="srez" required>
+            <mat-hint>srez</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="standard">
+            <mat-label>KO</mat-label>
+            <input  matInput placeholder="unesi oznaku" formControlName="ko" required>
+            <mat-hint>ko</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="standard">
+            <mat-label>Broj</mat-label>
+            <input type="number" matInput placeholder="unesi oznaku" formControlName="broj" required>
+            <mat-hint>broj</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="standard">
+            <mat-label>Podbroj</mat-label>
+            <input type="number" matInput placeholder="unesi oznaku" formControlName="podbroj" required>
+            <mat-hint>podbroj</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="standard">
+            <mat-label>Povrsina</mat-label>
+            <input type="number" matInput placeholder="unesi naziv" formControlName="povrsina"  required>
+            <mat-hint>povrsina</mat-hint>
+        </mat-form-field>
+         <mat-form-field appearance="standard">
+            <mat-label>Kultura</mat-label>
+            <input  matInput placeholder="unesi oznaku" formControlName="kultura" required>
+            <mat-hint>kultura</mat-hint>
+        </mat-form-field>
+         <mat-form-field appearance="standard">
+            <mat-label>Klasa</mat-label>
+            <input  matInput placeholder="unesi oznaku" formControlName="klasa" required>
+            <mat-hint>klasa</mat-hint>
+        </mat-form-field>
+        
+       
+        <div formGroupName="idnamenaz"> 
+          <mat-form-field appearance="standard">
+            <mat-label>Namena zemljišta</mat-label>
+              <mat-select [(value)]="selected1" placeholder="unesi namenu zemljista" formControlName="pnid">
+                      <mat-option *ngFor="let option of idnamenaz " [value]="option.pnid">
+                        {{option.oznaka}} - {{option.naziv}}
+                      </mat-option>
+                  </mat-select>
+              <mat-hint>namena zemljista</mat-hint> 
+          </mat-form-field>
+           </div>
+                
+
+ <p>
+  <button mat-raised-button color="primary" type="submit" [disabled]=!checkoutForm.valid>Sačuvaj</button>
+ </p> 
+</form>
+</div>
+<mat-divider></mat-divider>
+
+
+ <div> 
+
+    <form class="example-form box" >
+        <mat-form-field class="example-full-width">
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Pretraga" value="">
+        </mat-form-field>
+    </form>
+         
+ </div> 
+
+
+
+<table id="my-table" mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8" >
+
+  <!-- Position Column -->
+
+  <!-- Name Column -->
+
+  <ng-container matColumnDef="srez">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Srez</th>
+    <td mat-cell *matCellDef="let element"> {{element.srez}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="ko">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>KO</th>
+    <td mat-cell *matCellDef="let element"> {{element.ko}}  </td>
+  </ng-container>
+  
+    <!-- Weight Column -->
+  <ng-container matColumnDef="broj">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Broj</th>
+    <td mat-cell *matCellDef="let element"> {{element.broj}} </td>
+  </ng-container>
+  
+    <!-- Weight Column -->
+  <ng-container matColumnDef="podbroj">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Podbroj</th>
+    <td mat-cell *matCellDef="let element"> {{element.podbroj}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="povrsina">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Površina</th>
+    <td mat-cell *matCellDef="let element"> {{element.povrsina}}  </td>
+  </ng-container>
+  
+  <ng-container matColumnDef="kultura">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Kultura</th>
+    <td mat-cell *matCellDef="let element"> {{element.kultura}}  </td>
+  </ng-container>
+
+ <ng-container matColumnDef="klasa">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Klasa</th>
+    <td mat-cell *matCellDef="let element"> {{element.klasa}}  </td>
+  </ng-container>
+
+  <ng-container matColumnDef="idnamenaz">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Namena zemljišta </th>
+    <td mat-cell *matCellDef="let element"> {{element.idnamenaz.naziv}}  </td>
+  </ng-container>
+  
+   <ng-container matColumnDef="brisi">
+    <th mat-header-cell *matHeaderCellDef style="text-align: end">      
+        <button mat-icon-button color="primary" title="Štampa" (click)="print()">
+          <mat-icon aria-label="Example icon-button with a heart icon">print</mat-icon>
+        </button> </th>
+    <td mat-cell *matCellDef="let element" style="text-align: end"> 
+        <button mat-icon-button color="primary" aria-label="Example icon-button with a heart icon" title="Izmena" (click)="update(element);">
+           <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+        </button>
+        <button mat-icon-button color="primary" aria-label="Example icon-button with a heart icon" title="Brisanje" (click)="delete(element.pnid)">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon>
+        </button> </td>
+  </ng-container>  
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

@@ -1,0 +1,150 @@
+<meta charset="utf-8">
+
+<div class="box">
+ 
+ 
+  <h2 class="mat-h2">Nosioci prava</h2>
+     
+      
+</div>
+
+<div class="box">
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+ 
+  
+ 
+      
+        <mat-form-field appearance="standard">
+            <mat-label>JMBG</mat-label>
+            <input type="number" matInput placeholder="unesi naziv" formControlName="matbr"  required>
+            <mat-hint>JMBG</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="standard">
+            <mat-label>Ime</mat-label>
+            <input  matInput placeholder="unesi oznaku" formControlName="ime" required>
+            <mat-hint>ime</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="standard">
+            <mat-label>Ime oca</mat-label>
+            <input  matInput placeholder="unesi oznaku" formControlName="imeoca" required>
+            <mat-hint>ime oca</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="standard">
+            <mat-label>Prezime</mat-label>
+            <input  matInput placeholder="unesi oznaku" formControlName="prezime" required>
+            <mat-hint>prezime</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="standard">
+            <mat-label>Adresa</mat-label>
+            <input  matInput placeholder="unesi oznaku" formControlName="adresa" required>
+            <mat-hint>adresa</mat-hint>
+        </mat-form-field>
+         <mat-form-field appearance="standard">
+            <mat-label>Grad</mat-label>
+            <input  matInput placeholder="unesi oznaku" formControlName="grad" required>
+            <mat-hint>grad</mat-hint>
+        </mat-form-field>
+         <mat-form-field appearance="standard">
+            <mat-label>Država</mat-label>
+            <input  matInput placeholder="unesi oznaku" formControlName="drzava" required>
+            <mat-hint>država</mat-hint>
+        </mat-form-field>
+        
+        
+        <div formGroupName="tipnosiocaprava"> 
+          <mat-form-field appearance="standard">
+            <mat-label>Tip nosioca prava</mat-label>
+              <mat-select [(value)]="selected1" placeholder="unesi tip nosioca" formControlName="pnid">
+                      <mat-option *ngFor="let option of tipnosiocaprava " [value]="option.pnid">
+                        {{option.oznaka}} - {{option.naziv}}
+                      </mat-option>
+                  </mat-select>
+              <mat-hint>tip obveznika</mat-hint> 
+          </mat-form-field>
+           </div>
+                
+
+ <p>
+  <button mat-raised-button color="primary" type="submit" [disabled]=!checkoutForm.valid>Sačuvaj</button>
+ </p> 
+</form>
+</div>
+<mat-divider></mat-divider>
+
+
+ <div> 
+
+    <form class="example-form box" >
+        <mat-form-field class="example-full-width">
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Pretraga" value="">
+        </mat-form-field>
+    </form>
+         
+ </div> 
+
+
+
+<table id="my-table" mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8" >
+
+  <!-- Position Column -->
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="matbr">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> JMBG </th>
+    <td mat-cell *matCellDef="let element"> {{element.matbr}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="ime">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Ime </th>
+    <td mat-cell *matCellDef="let element"> {{element.ime}}  </td>
+  </ng-container>
+  
+    <!-- Weight Column -->
+  <ng-container matColumnDef="imeoca">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Ime oca</th>
+    <td mat-cell *matCellDef="let element"> {{element.imeoca}} </td>
+  </ng-container>
+  
+    <!-- Weight Column -->
+  <ng-container matColumnDef="prezime">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Prezime </th>
+    <td mat-cell *matCellDef="let element"> {{element.prezime}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="adresa">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Adresa </th>
+    <td mat-cell *matCellDef="let element"> {{element.adresa}}  </td>
+  </ng-container>
+  
+  <ng-container matColumnDef="grad">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Grad </th>
+    <td mat-cell *matCellDef="let element"> {{element.grad}}  </td>
+  </ng-container>
+
+ <ng-container matColumnDef="drzava">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Drzava </th>
+    <td mat-cell *matCellDef="let element"> {{element.drzava}}  </td>
+  </ng-container>
+  
+  <ng-container matColumnDef="tipnosiocaprava">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Tip nosioca prava </th>
+    <td mat-cell *matCellDef="let element"> {{element.tipnosiocaprava.naziv}}  </td>
+  </ng-container>
+
+   <ng-container matColumnDef="brisi">
+    <th mat-header-cell *matHeaderCellDef style="text-align: end">      
+        <button mat-icon-button color="primary" title="Štampa" (click)="print()">
+          <mat-icon aria-label="Example icon-button with a heart icon">print</mat-icon>
+        </button> </th>
+    <td mat-cell *matCellDef="let element" style="text-align: end"> 
+        <button mat-icon-button color="primary" aria-label="Example icon-button with a heart icon" title="Izmena" (click)="update(element);">
+           <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+        </button>
+        <button mat-icon-button color="primary" aria-label="Example icon-button with a heart icon" title="Brisanje" (click)="delete(element.pnid)">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon>
+        </button> </td>
+  </ng-container>  
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

@@ -1,0 +1,77 @@
+<meta charset="utf-8">
+
+<h4>info works!</h4>
+
+
+<p>{{title}} {{brojParc}}</p>
+
+<mat-dialog-actions>   
+  <button class="mat-raised-button mat-primary" mat-dialog-close (click)="close()">Zatvori</button>
+ </mat-dialog-actions> 
+ 
+
+<div *ngFor="let parcela of parcelData">
+	Broj: {{parcela.TEXTSTRING}}<br> Površina:{{parcela.AREA}}<br>
+	
+ 
+	<table id="my-table" mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8" >
+
+ 
+
+  <ng-container matColumnDef="srez">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Srez</th>
+    <td mat-cell *matCellDef="let element"> {{element.srez}} </td>
+  </ng-container>
+
+  
+  <ng-container matColumnDef="ko">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>KO</th>
+    <td mat-cell *matCellDef="let element"> {{element.ko}}  </td>
+  </ng-container>
+  
+    
+  <ng-container matColumnDef="broj">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Broj</th>
+    <td mat-cell *matCellDef="let element"> {{element.broj}} </td>
+  </ng-container>
+  
+    
+  <ng-container matColumnDef="podbroj">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Podbroj</th>
+    <td mat-cell *matCellDef="let element"> {{element.podbroj}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="povrsina">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Površina</th>
+    <td mat-cell *matCellDef="let element"> {{element.povrsina}}  </td>
+  </ng-container>
+  
+  <ng-container matColumnDef="kultura">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Kultura</th>
+    <td mat-cell *matCellDef="let element"> {{element.kultura}}  </td>
+  </ng-container>
+
+ <ng-container matColumnDef="klasa">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Klasa</th>
+    <td mat-cell *matCellDef="let element"> {{element.klasa}}  </td>
+  </ng-container>
+
+  <ng-container matColumnDef="idnamenaz">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Namena zemljišta </th>
+    <td mat-cell *matCellDef="let element"> {{element.idnamenaz.naziv}}  </td>
+  </ng-container>
+  
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table> 
+
+</div>
+<div *ngFor="let obj of objektiData">
+	Broj: {{obj.TEXTSTRING}}<br> Površina:{{obj.AREA}}
+</div>
+<div *ngFor="let trg of trgoviData">
+	Naziv: {{trg.TEXTSTRING}}<br> Površina:{{trg.AREA}}
+</div>
+
+
+

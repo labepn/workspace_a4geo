@@ -1,0 +1,205 @@
+2020-12-07 12:04:12,523 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-12-07 12:07:21,679 [Worker-10: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: geo.pn:eterrapn:0.0.1-SNAPSHOT @ C:\sts\workspace_a4geo\geoportaliVezbe\pom.xml.
+2020-12-07 12:07:21,853 [Worker-14: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: geo.pn:eterrapn:0.0.1-SNAPSHOT @ C:\sts\workspace_a4geo\geoportaliVezbe\pom.xml.
+2020-12-07 12:07:21,984 [Worker-10: Updating Maven Dependencies] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:22,010 [Worker-10: Updating Maven Dependencies] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:22,189 [Worker-14: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:22,209 [Worker-14: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:22,658 [Worker-14: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:22,674 [Worker-14: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:23,827 [Worker-14: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:23,835 [Worker-14: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:23,842 [Worker-14: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:24,135 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:07:24,138 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-07 12:07:24,164 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:07:24,167 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:07:24,168 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:07:25,070 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:25,085 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:25,249 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:07:25,251 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-07 12:07:25,252 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:07:25,254 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:07:25,254 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:07:25,791 [Worker-14: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: geo.pn:eterrapn:0.0.1-SNAPSHOT @ C:\sts\workspace_a4geo\geoportaliVezbe\pom.xml.
+2020-12-07 12:07:25,967 [Worker-14: Updating Maven Dependencies] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:25,981 [Worker-14: Updating Maven Dependencies] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:28,463 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:28,478 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:28,649 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:28,655 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:28,661 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:07:28,874 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:07:28,876 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:07:28,876 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:07:28,878 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:07:28,878 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:11:24,146 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:11:24,146 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:11:24,147 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:11:24,148 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:11:24,148 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:15:54,299 [Worker-16: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: geo.pn:eterrapn:0.0.1-SNAPSHOT @ C:\sts\workspace_a4geo\geoportaliVezbe\pom.xml.
+2020-12-07 12:15:54,468 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:15:54,481 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:15:55,204 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:15:55,210 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:15:55,215 [Worker-16: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:15:55,384 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:15:55,385 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:15:55,385 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:15:55,387 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:15:55,387 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:15:55,388 [Worker-16: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of geoportaliVezbe
+2020-12-07 12:15:55,388 [Worker-16: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for geoportaliVezbe
+2020-12-07 12:15:55,390 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:15:56,916 [Worker-7: Check for devtools] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:15:56,930 [Worker-7: Check for devtools] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:17:36,768 [Worker-22: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: geo.pn:eterrapn:0.0.1-SNAPSHOT @ C:\sts\workspace_a4geo\geoportaliVezbe\pom.xml.
+2020-12-07 12:17:36,920 [Worker-22: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:17:36,933 [Worker-22: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:17:37,640 [Worker-22: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:17:37,646 [Worker-22: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:17:37,652 [Worker-22: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:17:37,819 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:17:37,820 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:17:37,820 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:17:37,822 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:17:37,822 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:17:37,822 [Worker-22: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of geoportaliVezbe
+2020-12-07 12:17:37,822 [Worker-22: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for geoportaliVezbe
+2020-12-07 12:17:37,824 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:17:39,443 [Worker-22: Check for devtools] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:17:39,457 [Worker-22: Check for devtools] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:19:54,967 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:19:54,967 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-07 12:19:54,976 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:19:54,978 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:19:54,978 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:20:15,537 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:20:15,537 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-07 12:20:15,538 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:20:15,541 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:20:15,541 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:20:17,734 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:20:17,734 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-07 12:20:17,736 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:20:17,737 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:20:17,737 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:20:49,406 [Worker-26: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: geo.pn:eterrapn:0.0.1-SNAPSHOT @ C:\sts\workspace_a4geo\geoportaliVezbe\pom.xml.
+2020-12-07 12:20:49,552 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:20:49,565 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:20:50,262 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:20:50,267 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:20:50,272 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:20:50,432 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:20:50,433 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:20:50,433 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:20:50,434 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:20:50,434 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:20:50,434 [Worker-26: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of geoportaliVezbe
+2020-12-07 12:20:50,435 [Worker-26: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for geoportaliVezbe
+2020-12-07 12:20:50,436 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:20:53,163 [Worker-16: Check for devtools] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:20:53,176 [Worker-16: Check for devtools] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:32:06,716 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-12-07 12:32:07,634 [Worker-4: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:32:07,660 [Worker-4: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:39:05,276 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:39:05,305 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:39:05,501 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:39:05,507 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:39:05,513 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:39:05,763 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:39:05,766 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-07 12:39:05,775 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:39:05,777 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:39:05,778 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:39:07,126 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:39:07,127 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:39:07,127 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:39:07,129 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:39:07,129 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:40:08,095 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:40:08,095 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-07 12:40:08,097 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:40:08,099 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:40:08,099 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:40:36,468 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:40:36,468 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-07 12:40:36,470 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:40:36,471 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:40:36,471 [Worker-12: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:40:57,910 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:40:57,910 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-07 12:40:57,912 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:40:57,913 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:40:57,913 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:47:13,821 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:47:13,822 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-07 12:47:13,825 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:47:13,826 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:47:13,826 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:49:48,879 [Worker-21: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: geo.pn:eterrapn:0.0.1-SNAPSHOT @ C:\sts\workspace_a4geo\geoportaliVezbe\pom.xml.
+2020-12-07 12:49:49,052 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:49:49,067 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:49:49,408 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:49:49,423 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:49:50,256 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:49:50,264 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:49:50,272 [Worker-21: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:49:50,454 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:49:50,455 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:49:50,455 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:49:50,456 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:49:50,456 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:49:50,458 [Worker-21: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of geoportaliVezbe
+2020-12-07 12:49:50,458 [Worker-21: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for geoportaliVezbe
+2020-12-07 12:49:50,460 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:50:02,954 [Worker-22: Check for devtools] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:50:02,968 [Worker-22: Check for devtools] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:50:21,919 [Worker-25: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: geo.pn:eterrapn:0.0.1-SNAPSHOT @ C:\sts\workspace_a4geo\geoportaliVezbe\pom.xml.
+2020-12-07 12:50:22,077 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:50:22,092 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:50:22,809 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-xjc:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:50:22,825 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:50:22,831 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.bind:jaxb-impl:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:50:23,009 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:50:23,010 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:50:23,010 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:50:23,011 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:50:23,011 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:50:23,012 [Worker-25: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of geoportaliVezbe
+2020-12-07 12:50:23,012 [Worker-25: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for geoportaliVezbe
+2020-12-07 12:50:23,014 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:50:28,891 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:50:28,913 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:50:29,097 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:50:29,098 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-07 12:50:29,105 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:50:29,106 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:50:29,106 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:51:48,021 [Worker-18: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: geo.pn:eterrapn:0.0.1-SNAPSHOT @ C:\sts\workspace_a4geo\geoportaliVezbe\pom.xml.
+2020-12-07 12:51:48,179 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:51:48,194 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:51:48,965 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:51:48,966 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:51:48,966 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:51:48,968 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:51:48,968 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 12:51:48,968 [Worker-18: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of geoportaliVezbe
+2020-12-07 12:51:48,968 [Worker-18: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for geoportaliVezbe
+2020-12-07 12:51:48,970 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:52:04,834 [Worker-23: Check for devtools] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8-promoted-b146 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:52:04,847 [Worker-23: Check for devtools] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.sun.xml.ws:jaxws-rt:jar:2.2.8 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+2020-12-07 12:56:46,723 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:56:46,723 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:56:46,724 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 12:56:46,725 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 12:56:46,725 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources
+2020-12-07 13:52:39,924 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 13:52:39,924 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2020-12-07 13:52:39,932 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-12-07 13:52:39,933 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-12-07 13:52:39,933 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sts\workspace_a4geo\geoportaliVezbe\src\test\resources

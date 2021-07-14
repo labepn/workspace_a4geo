@@ -1,0 +1,52 @@
+	
+.headerRow {
+	background-image: linear-gradient(to right, #3366cc , white);
+	border-bottom: 3px solid rgb(198, 224, 155);
+}
+.logo {
+    background-image: url('/assets/images/geologo.png');
+    background-size: 90px 80px;
+    width: 190px;
+    background-repeat: no-repeat;
+    background-position: left top;    
+    height: 100px;
+    margin-left:25px;
+}
+
+
+.header {
+    padding-right: 20px;
+    height: 80px;
+	min-width:600px;    
+    background-size: 980px 150px;
+}
+
+
+.header-naslov {
+    WIDTH: 420px;
+    FONT-FAMILY: "Lucida Sans Unicode", "Lucida Grande", sans-serif;    
+    COLOR:  white;
+    FONT-SIZE: 14pt;
+    PADDING-TOP: 25px;
+    padding-left: 120px;
+}
+
+.naslov {
+    text-align:center;
+    color: #3366cc;
+       
+}
+
+
+
+
+.example-container {
+  width: 100%;
+  height: calc(100vh - 123px);
+  margin: 10px;
+}
+
+
+
+
+	

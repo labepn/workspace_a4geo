@@ -1,0 +1,70 @@
+<meta charset="utf-8">
+
+<div class="box">
+
+	<h2 class="mat-h2">Tip nosioca prava</h2>
+
+</div>
+<div class="box">
+	<form [formGroup]="checkoutForm"
+		(ngSubmit)="onSubmit(checkoutForm.value)">
+		<p>
+			<mat-form-field appearance="standard"> <mat-label>Naziv</mat-label>
+			<input matInput placeholder="unesi naziv" formControlName="naziv"
+				required> <mat-hint>naziv</mat-hint> </mat-form-field>
+			<mat-form-field appearance="standard"> <mat-label>Oznaka</mat-label>
+			<input type="number" matInput placeholder="unesi oznaku"
+				formControlName="oznaka" required> <mat-hint>oznaka</mat-hint>
+			</mat-form-field>
+		</p>
+		<p>
+			<button mat-raised-button color="primary" type="submit"
+				[disabled]=!checkoutForm.valid>Sačuvaj</button>
+		</p>
+	</form>
+</div>
+<mat-divider></mat-divider>
+
+<div>
+	<form class="example-form box">
+		<mat-form-field class="example-full-width"> <input
+			matInput (keyup)="applyFilter($event.target.value)"
+			placeholder="Pretraga" value=""> </mat-form-field>
+	</form>
+</div>
+
+<table id="my-table" mat-table [dataSource]="dataSource" matSort
+	class="mat-elevation-z8">
+	<ng-container matColumnDef="oznaka">
+	<th mat-header-cell *matHeaderCellDef mat-sort-header>Oznaka</th>
+	<td mat-cell *matCellDef="let element">{{element.oznaka}}</td>
+	</ng-container>
+	<ng-container matColumnDef="naziv">
+	<th mat-header-cell *matHeaderCellDef mat-sort-header>Naziv</th>
+	<td mat-cell *matCellDef="let element">{{element.naziv}}</td>
+	</ng-container>
+	<ng-container matColumnDef="brisi">
+	<th mat-header-cell *matHeaderCellDef style="text-align: end">
+		<button mat-icon-button color="primary" title="Štampa">
+			<mat-icon aria-label="Example icon-button with a heart icon">print</mat-icon>
+		</button>
+	</th>
+	<td mat-cell *matCellDef="let element" style="text-align: end">
+		<button mat-icon-button color="primary"
+			aria-label="Example icon-button with a heart icon" title="Izmena"
+			(click)="update(element);">
+			<mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+		</button>
+		<button mat-icon-button color="primary"
+			aria-label="Example icon-button with a heart icon" title="Brisanje"
+			(click)="delete(element.pnid)">
+			<mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon>
+		</button>
+	</td>
+	</ng-container>
+
+	<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+	<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+

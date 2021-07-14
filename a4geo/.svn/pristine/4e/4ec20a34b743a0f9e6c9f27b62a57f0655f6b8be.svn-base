@@ -1,0 +1,68 @@
+import { Injectable } from '@angular/core';
+import { HttpClient , HttpResponse, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Sifarnik } from '../../sifarnici/Sifarnik';
+
+
+@Injectable({
+    providedIn: 'root'
+})
+export class NosiocipService {
+    
+    constructor(private http: HttpClient) { }
+    
+    baseurl='http://localhost:8085';
+    
+    public getNosiocip(): Observable<Sifarnik[]> {
+        const url = this.baseurl + '/knnosilacprava';
+        return this.http.get<Sifarnik[]>(url);  
+    }
+    
+    public sendDataToServer(nosiocip, isUpdate): Observable<Sifarnik[]>  {
+        if (isUpdate) {
+            this.http.put<Sifarnik> (this.baseurl + '/knnosilacprava', 
+                    nosiocip)
+                    .subscribe(
+                            (val) => {
+                                console.log('POST call successful value returned in body',
+                                        val);
+                                //return this.getObveznici();
+                            },
+                            response => {
+                                console.log('POST call in error', response); return null;
+                            },
+                            () => {
+                                console.log('The POST observable is now completed.');
+                            });
+            return this.http.get<Sifarnik[]>(this.baseurl + '/knnosilacprava');
+        } else {
+            this.http.post<Sifarnik> (this.baseurl + '/knnosilacprava',
+                    nosiocip)
+                    .subscribe(
+                            (val) => {
+                                console.log('POST call successful value returned in body',
+                                        val);
+                                
+                            },
+                            response => {
+                                console.log('POST call in error', response); return null;
+                            },
+                            () => {
+                                console.log('The POST observable is now completed.');
+                                
+                                
+                            });
+            return this.http.get<Sifarnik[]>(this.baseurl + '/knnosilacprava');
+        }
+    }
+    
+    
+    
+    delete (pnid: number): Observable<{}> {
+        const url = this.baseurl + '/knnosilacprava/'+pnid; // DELETE api/heroes/42
+        return this.http.delete(url)
+        .pipe(
+                
+        );
+    }
+}

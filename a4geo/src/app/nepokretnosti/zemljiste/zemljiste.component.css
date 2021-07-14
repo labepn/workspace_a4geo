@@ -1,0 +1,26 @@
+table {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+tr:hover {background-color: #eee;}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+.dugmad {
+  padding: 15px;
+}
+mat-form-field {
+    margin: 5px;
+    
+}
+
+.box {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+@charset "ISO-8859-1";

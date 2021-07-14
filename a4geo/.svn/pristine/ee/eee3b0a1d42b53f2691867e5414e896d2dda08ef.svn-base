@@ -1,0 +1,21 @@
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+import { GeoportalComponent } from './geoportal/geoportal.component';
+import { NosiocipComponent } from './nepokretnosti/nosiocip/nosiocip.component';
+import { TipnosiocapComponent } from './sifarnici/tipnosiocap/tipnosiocap.component';
+
+import { GeoportalmkComponent } from './geoportalmk/geoportalmk.component';
+
+const routes: Routes = [
+    { path: 'geoportal', component: GeoportalComponent },
+    { path: 'nosiocip', component: NosiocipComponent }, 
+    { path: 'sifarnici/tipnosiocap', component: TipnosiocapComponent }, 
+    { path: 'geoportalmk', component: GeoportalmkComponent },
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

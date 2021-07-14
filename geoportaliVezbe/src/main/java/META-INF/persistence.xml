@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="eterrapn">
+		<class>eterrapn.jpa.Obveznik</class>
+		<class>eterrapn.jpa.Pn_obveznik</class>
+		<class>eterrapn.jpa.Pnv_rjesenje_zem</class>
+		<class>eterrapn.jpa.Pn_tip_zaduzenja</class>
+		<class>eterrapn.jpa.Pn_ulica</class>
+		<class>eterrapn.jpa.Pn_zaduzenje_zem</class>
+		<class>eterrapn.jpa.Pn_zaduzenje_obj</class>
+		<class>eterrapn.jpa.Pn_zaduzenje_pdo</class>
+		<class>eterrapn.jpa.Pn_rata_zaduzenja_zem</class>	
+		<class>eterrapn.jpa.Pn_rata_zaduzenja_pdo</class>				
+					
+		<class>eterrapn.jpa.Pn_namjena_pdo</class>
+		<class>eterrapn.jpa.Stat_tip_zaduzenja_uplata_pdo</class>
+		<class>eterrapn.jpa.Stat_tip_zaduzenja_uplata_zem</class>
+		<class>eterrapn.jpa.Stat_tip_zaduzenja_zaduzenje_pdo</class>
+		<class>eterrapn.jpa.Stat_tip_zaduzenja_zaduzenje_zem</class>
+		<class>eterrapn.jpa.Stat_tip_obveznika_uplata_pdo</class>
+		<class>eterrapn.jpa.Stat_tip_obveznika_uplata_zem</class>
+		<class>eterrapn.jpa.Stat_tip_obveznika_zaduzenje_pdo</class>
+		<class>eterrapn.jpa.Stat_tip_obveznika_zaduzenje_zem</class>
+		<class>eterrapn.jpa.Stat_namjena_pdo_uplata</class>
+		<class>eterrapn.jpa.Stat_namjena_pdo_zaduzenje</class>
+		<class>eterrapn.jpa.Pn_konto</class>
+		
+		
+	</persistence-unit>
+</persistence>

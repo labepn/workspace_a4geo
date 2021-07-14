@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+
+<p>info works!</p>
+
+<p>{{title}} {{brojParc}}</p>
+
+
+
+<div *ngFor="let parcela of parcelData">
+	Broj parcele: {{parcela.TEXTSTRING}} Površina:{{parcela.AREA}}
+</div>
+
+ <mat-dialog-actions>   
+  <button class="mat-raised-button mat-primary" mat-dialog-close (click)="close()">Zatvori</button>
+ </mat-dialog-actions> 

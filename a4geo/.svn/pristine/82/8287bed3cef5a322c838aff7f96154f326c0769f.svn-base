@@ -1,0 +1,244 @@
+import { Component, OnInit } from '@angular/core';
+import { Map, View } from 'ol';
+import TileLayer from 'ol/layer/Tile';
+import VectorLayer from 'ol/layer/Vector';
+import XYZ from 'ol/source/XYZ';
+import OSM from 'ol/source/OSM.js';
+import {fromLonLat} from 'ol/proj.js';
+
+import TileWMS from 'ol/source/TileWMS.js';
+import GeoJSON from 'ol/format/GeoJSON.js';
+import VectorSource from 'ol/source/Vector.js';
+import {Stroke, Text, Style} from 'ol/style.js';
+import Select from 'ol/interaction/Select.js';
+import {bbox as bboxStrategy} from 'ol/loadingstrategy.js';
+
+import Feature from 'ol/Feature.js';
+import Point from 'ol/geom/Point.js';
+import {Icon} from 'ol/style.js';
+
+import {GeoportalService } from './geoportal.service';
+
+
+import Circle from 'ol/geom/Circle.js';
+import Polygon from 'ol/geom/Polygon.js';
+
+
+import {addProjection, addCoordinateTransforms, transform} from 'ol/proj.js';
+import Projection from 'ol/proj/Projection.js';
+
+import {register} from 'ol/proj/proj4.js';
+
+import proj4 from 'proj4';
+
+import {get as getProjection} from 'ol/proj.js';
+
+import {InfoComponent } from './info/info.component'; //import info komponente
+import {MatDialog, MatDialogConfig, MatDialogRef} from '@angular/material'; //import angular material dijaloga
+
+export interface WMSLejeri {
+    type: string;
+    title:string;
+    name: string;
+    position: number;
+    url: string;
+    visible: boolean;
+  }
+
+  const ELEMENT_DATA: WMSLejeri[] = [
+    {type: 'WMS', title: 'Parcele', position: 1, name: 'cite:parcele_ns_32634', url: 'http://147.91.175.146:8080/geoserver/ows', visible: true},
+    {type: 'WMS', title: 'Objekti', position: 2, name: 'cite:objekti_ns_32634', url: 'http://147.91.175.146:8080/geoserver/ows', visible: true},
+   
+  ];
+  
+
+
+@Component({
+  selector: 'app-geoportal',
+  templateUrl: './geoportal.component.html',
+  styleUrls: ['./geoportal.component.css']
+})
+export class GeoportalComponent implements OnInit {
+    
+    map;
+    dataSource = ELEMENT_DATA;
+    crs='EPSG:32634';//MORA DA BUDE CRS UTM DA BI Info radio
+    
+    geojson;
+    
+    getFeatureInfofunction;
+    
+
+  constructor(private geoportalService: GeoportalService, public dialog: MatDialog) { }
+
+  ngOnInit() {
+      this.initMap();
+  }
+  
+  initMap(){           
+      
+    //https://spatialreference.org/ref/epsg/32634/
+      //https://epsg.io/32634
+      
+      proj4.defs('EPSG:32634', '+proj=utm +zone=34 +ellps=WGS84 +datum=WGS84 +units=m +no_defs');
+      register(proj4);
+
+      var proj32634 = getProjection('EPSG:32634');
+      proj32634.setExtent([166021.44, 0.00, 534994.66, 9329005.18]);
+      
+     
+      
+      var raster = new TileLayer({
+          source: new OSM()
+      }); 
+      
+      var layers=[];
+      layers.push(raster);
+      
+      
+      var vectorSource;
+      
+      for (let entry of this.dataSource) {
+          console.log(entry.name + entry.url);
+          if (entry.type=='WMS') {
+              var sloj= new TileLayer({                  
+                  source: new TileWMS({                    
+                    url: entry.url,
+                    params: {'LAYERS': entry.name, 'TILED': true},
+                    serverType: 'geoserver',                    
+                    transition: 0
+                  }),
+                  visible : entry.visible
+                });
+              
+              layers.push(sloj);
+          } else {
+              var vcrs=this.crs;
+              vectorSource = new VectorSource({
+                  format: new GeoJSON(),
+                  url: function(extent) {
+                      return entry.url+'?service=WFS&' +
+                      'version=1.1.0&request=GetFeature&typename=' + entry.name + '&'+
+                      'outputFormat=application/json&srsname='+vcrs+'&' +
+                      'bbox=' + extent.join(',') + ','+vcrs;
+                  },
+                  strategy: bboxStrategy
+                });
+              var style = new Style({
+                  stroke: new Stroke({
+                      color: '#aaa',
+                      width: 0.1
+                  }),
+                  text: new Text({
+                      font: '12px Calibri,sans-serif',            
+                      stroke: new Stroke({
+                        color: '#fff', width: 2
+                      }),
+                      // get the text from the feature - `this` is ol.Feature
+                      // and show only under certain resolution
+                      text: 'Pera'
+                  })
+              });
+              
+              var vector = new VectorLayer({
+                source: vectorSource,
+                visible : true,
+                style: function(feature) {                    
+                    style.getText().setText(feature.get('Broj_parce'));
+                    return style;
+                }        
+              });
+            layers.push(vector);  
+             
+              
+          }
+         
+          
+      }
+      
+      
+      
+      
+      
+       //N: 4950391 E: 306435
+      /*
+       * 
+       * 
+      var projection = new Projection({
+          code: 'EPSG:32634',
+          // The extent is used to determine zoom level 0. Recommended values for a
+          // projection's validity extent can be found at https://epsg.io/.
+          extent: [7423922.007,5054790.257, 7409764,5011669],
+          units: 'm'
+        });
+        addProjection(projection);*/
+        
+       // var extent = [420000, 30000, 900000, 350000];
+      
+      this.map=new Map({
+          target: 'map',
+          layers:layers,
+          view: new View({
+              projection: proj32634,    //'EPSG:3857'
+              //center: transform([19.833549, 45.267136], 'EPSG:4326', 'EPSG:32634'), //bar 19.10028, 42.09306 ns 19.833549, 45.267136  //3857 //center: fromLonLat([20.03331, 45.61632],'EPSG:32634')
+              center: [ 408957, 5011224],              
+              zoom: 14              
+              //zoom: 4
+          })
+        });
+      
+      //getFeatureInfo          
+      this.getFeatureInfofunction = function(evt){
+          var g=data.geoportal;
+          var parcSloj=layers[1];//nalazi redni broj sloja na mapi za koji se radi getFeatureInfo
+          var wsparc=parcSloj.getSource();//pronalazi data source za taj sloj      
+          var crsc=g.crs;       //ovo je kao this.crs samo this nije direktno vidljiv u ovoj funkciji
+          var dlg=g.dialog;      //this.crs, this.dialog i this.map su promenljive definisane u komponenti geoportal
+          var view=g.map.getView();
+          
+          var viewResolution = /** @type {number} */ (view.getResolution());         
+          var urlParc = wsparc.getGetFeatureInfoUrl( evt.coordinate, viewResolution, g.crs, {'INFO_FORMAT': 'application/json'});       
+          fetch(urlParc).then(response => {  //poziv getFeatureInfo zahteva prema geoserveru na datim koordinatama                    
+              return response.json();
+          }).then(data => { //kada dobije podatke o parceli sa geoservera otvara info dijalog
+                // Work with JSON data here        
+                console.log('PREUZEO PODATKE: '+JSON.stringify(data));
+                var parcelData=data.features[0].properties;   
+                
+                //otvaranje dijaloga
+                const dialogConfigLayers = new MatDialogConfig();
+                dialogConfigLayers.disableClose = true;
+                dialogConfigLayers.autoFocus = true;
+                dialogConfigLayers.data = {      //prenos parametara u komponentu Info                      
+                        title: 'Podaci za parcelu',
+                        brParc: parcelData.TEXTSTRING,       //ovo je atribut u sloju parcela koji sadrzi broj parcele                     
+                        parcelData : [parcelData],           //ovo su svi podaci o parceli koji stizu sa servera      
+                };
+                const dialogRefLayers = dlg.open(InfoComponent, dialogConfigLayers);    
+                
+                //zatvaranje dijaloga - ovde se mogu proslediti parametri sa komponente Info, koje je potrebno obraditi nakon zatvaranja prozora
+                dialogRefLayers.afterClosed().subscribe(resultLayer => {
+                    console.log('ZATVORIO ' );                                    
+                }); 
+            
+           
+          }).catch(err => {
+            // Do something for an error here
+          });
+      }
+
+      
+      var data={geoportal:this};//prenos this objekta u event funkciju (this se odnosi na komponentu geoportal), da bi se moglo pristupiti atributima geoportal komponente kao sto je map
+      this.getFeatureInfofunction = this.getFeatureInfofunction.bind(data);
+      this.map.on('click',this.getFeatureInfofunction); //definisanje klik dogadjaja na objektu map
+
+      
+      
+  }
+  
+  //transform([19.833549, 45.267136],'EPSG:4326','EPSG:3857' ),
+  //import {transform} from 'ol/proj.js';
+  
+  
+
+}
